@@ -1,6 +1,6 @@
 const LoginPage = require('../pageobjects/login.page');
 
-describe('Login Form Title', () => {
+describe('Login Page Title', () => {
     it('Verify page Title is correct', () => {
         LoginPage.open()
         browser.pause(3000)
@@ -14,13 +14,11 @@ describe('Login Form buttons', () => {
         browser.pause(3000)
         expect(LoginPage.submitBtn).toExist;
         expect(LoginPage.submitBtn).toBeClickable;
-        expect(LoginPage.resetBtn).toExist;
-        expect(LoginPage.resetBtn).toBeClickable;
     })
 })
 
 describe ('Login form credentials verifications', () => {
-    beforeAll('Open browser', () =>{
+    beforeEach('Open browser', () =>{
 		LoginPage.open();
     })
     it('Should deny access with valid email and wrong password', () => {
