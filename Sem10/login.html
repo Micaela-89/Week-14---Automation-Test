@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log in Form</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/Styles.css">
+</head>
+<body>
+    <div class="content">
+        <h1>
+            Log In
+        </h1>
+        <form id="loginForm">
+            <label id="eMail" for="eMail">
+                E-mail:
+            </label>
+            <input id="emailInput" class="infoInput" type="email" name="eMail" placeholder="Your email here" required>
+            <span id= "errorMsgEmail" class="errorMsg">
+                The email address is invalid
+            </span>
+            <label id="password" for="password">
+                Password:
+            </label>
+            <input id="passwordInput"  class="infoInput" type="password" name="password" placeholder="Enter your password" required>
+            <span id= "errorMsgPassword" class="errorMsg">
+                Your password can only contain letters and numbers and must be at least 8 characters long.
+            </span>
+            <input id= "submitForm" class="submitBtn" type="submit" value="Log in">
+            <input class="resetBtn" type="reset" value="Reset">
+            <a class="submit" href="./register.html">
+                Don't have an account? Register here!
+            </a>
+    </form>
+    <div id="validationsDiv" class="validations-hidden">
+    </div>
+    </div>
+    <script src="js/loginValidations2.js">
+    </script>
+</body>
+</html>
