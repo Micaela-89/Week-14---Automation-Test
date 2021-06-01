@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "wdio",
     "start": "nodemon server.js",
     "dev": "nodemon server.js"
   },
@@ -27,5 +27,13 @@
   "directories": {
     "test": "test"
   },
-  "description": ""
+  "description": "Automation tests  with WebDriver IO for the Login and Register Forms created during Week 10.\r Those forms were uploaded to the server during week 11. \r Access to the forms:\r Login: http://localhost:4000/login\r Register: http://localhost:4000/register",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Micaela-89/Week-14---Automation-Test.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Micaela-89/Week-14---Automation-Test/issues"
+  },
+  "homepage": "https://github.com/Micaela-89/Week-14---Automation-Test#readme"
 }

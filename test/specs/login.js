@@ -4,7 +4,7 @@ describe('Login Page Title', () => {
     it('Verify page Title is correct', () => {
         LoginPage.open()
         browser.pause(3000)
-        expect(browser).toHaveTitle('Log In')
+        expect(browser).toHaveTitle('Log in')
     })
 })
 
