@@ -11,14 +11,14 @@ app.use(express.urlencoded({ extended: true }));
 app.listen(port, () => {
     console.log(`Example app listening at http://localhost:${port}`)
 })
-app.use(express.static(path.join(__dirname, 'Semana10')));
+app.use(express.static(path.join(__dirname, 'Sem10')));
 
 app.get('/login',(req,res)=> {
-    res.sendFile(path.join(__dirname, 'Semana10', 'login.html'))
+    res.sendFile(path.join(__dirname, 'Sem10', 'login.html'))
 });
 
 app.get('/register',(req,res)=> {
-    res.sendFile(path.join(__dirname, 'Semana10', 'register.html'))
+    res.sendFile(path.join(__dirname, 'Sem10', 'register.html'))
 });
 
 var handleRegister = function (req, res) {
